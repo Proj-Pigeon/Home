@@ -3,6 +3,7 @@ import './global.css';
 import { Inter } from 'next/font/google';
 
 export const metadata = {
+  metadataBase: new URL('https://www.project-pigeon.com'),
   title: {
     default: '鸽群计划 · 咕咕地球',
     template: '%s · 鸽群计划',
