@@ -8,6 +8,10 @@ export const metadata = {
     template: '%s · 鸽群计划',
   },
   description: '鸽群计划制作安静而清晰的探索工具，咕咕地球是第一个：桌面优先的地理探索空间。',
+  icons: {
+    icon: '/project-pigeon.png',
+    apple: '/project-pigeon.png',
+  },
 };
 
 const inter = Inter({
