@@ -16,6 +16,8 @@ export const guEarthConfig = {
   repo: 'GuEarth',
 };
 
+export const cnMirrorUrl = 'https://pigeon.nexaorion.cn';
+
 const getContentUrl = createGetUrl(docsContentRoute);
 
 export function getPageMarkdownUrl(page: { slugs: string[]; locale?: string }) {

@@ -2,6 +2,7 @@ import { RootProvider } from 'fumadocs-ui/provider/next';
 import Script from 'next/script';
 import './global.css';
 import { Inter } from 'next/font/google';
+import { MainlandNotice } from '@/components/mainland-notice';
 
 export const metadata = {
   metadataBase: new URL('https://www.project-pigeon.com'),
@@ -25,6 +26,7 @@ export default function Layout({ children }: LayoutProps<'/'>) {
     <html lang="zh-CN" className={inter.className} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen">
         <RootProvider>{children}</RootProvider>
+        <MainlandNotice />
         <Script
           src="https://analytics.nexaorion.tech/script.js"
           data-website-id="1c8cfc40-adaa-4ca6-aa5c-ec54bba30870"
