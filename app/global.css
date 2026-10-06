@@ -2,6 +2,16 @@
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
 
+:root {
+  --color-fd-primary: #1677ff;
+  --color-fd-primary-foreground: #ffffff;
+}
+
+.dark {
+  --color-fd-primary: #78b4ff;
+  --color-fd-primary-foreground: #0a1424;
+}
+
 @theme inline {
   --color-background: var(--color-fd-background);
   --color-foreground: var(--color-fd-foreground);
