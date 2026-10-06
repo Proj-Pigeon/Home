@@ -66,9 +66,9 @@ body {
     color: inherit;
     text-decoration: none;
   }
+  .shell :is(h1, h2, h3, p) { margin: 0; }
 }
 button { font: inherit; }
-.shell :is(h1, h2, h3, p) { margin: 0; }
 
 .shell { min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); color: var(--fg); }
 .frame { width: min(1240px, 100% - 48px); margin-inline: auto; }
