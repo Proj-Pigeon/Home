@@ -1,0 +1,63 @@
+---
+title: 配置供应商
+description: 手把手教你配置地图和联网搜索供应商
+---
+
+## 地图供应商
+
+咕咕地球**内置了地图搜索功能**，且开放工具给 AI 使用。AI 不仅支持通过地图搜索供应商来搜索地点，还可获取对应地点的地理信息数据（如高度）。为了使用地图搜索功能，您需要在软件内并配置地图供应商的密钥。
+
+<Callout title="目前支持的地图供应商平台" type="info">
+  [高德地图开放平台](https://lbs.amap.com/) 和 [百度地图开放平台](https://lbsyun.baidu.com/)，未来计划拓展更多国内外的支持 API 查询的平台。
+</Callout>
+
+<Callout title="配置多个地图供应商的情况" type="warn">
+  目前 AI 仅支持调用 **高德地图开放平台** 的 API 来查询地点和地理信息，**搜索框支持切换地图供应商来获取不同的信息**。
+</Callout>
+
+### 高德地图开放平台
+
+对于大多数用户来说，我们推荐**优先使用高德地图开放平台**，因为我们大多数的内置工具都是基于高德地图开放平台的 API 来实现的。
+
+#### 1. 注册并登录开发者账号
+
+点击链接打开高德地图开发平台进入首页，点击右上角的“注册”按钮，通过手机号等方式注册你的开发者账号。
+
+![高德地图开放平台首页](https://static.project-pigeon.com/docs/configuration/01.png)
+
+![使用手机号注册账号](https://static.project-pigeon.com/docs/configuration/02.png)
+
+#### 2. 实名认证
+
+在创建并登录成功后，您需要**完成个人/企业的实名认证**，才能进入开发者平台使用相关功能。
+
+<Callout title="个人实名认证需要支付宝APP" type="warn">
+  高德地图开放平台**需要使用支付宝APP进行实名认证**：您需要在手机上安装支付宝APP，扫码登录支付宝账号并完成刷脸后才可完成实名。
+
+  如果您没有您个人实名的支付宝账户，**请使用百度地图开放平台等其他地图供应商**。
+</Callout>
+<Callout title="推荐使用企业实名" type="info">
+  在高德地图开放平台内使用企业实名能够获得相比个人实名更多的免费额度和更高的调用限制（x20），**如果您有条件，我们推荐您使用企业实名**。
+</Callout>
+
+![个人实名认证](https://static.project-pigeon.com/docs/configuration/03.png)
+
+#### 3. 创建应用
+
+前往 [控制台 - 应用管理 - 我的应用](https://console.amap.com/dev/key/app) -> 点击 “创建新应用” ->  填写应用名称和应用类型 -> 点击 “新建”。
+
+![控制台指引](https://static.project-pigeon.com/docs/configuration/04.png)
+
+![创建新应用](https://static.project-pigeon.com/docs/configuration/05.png)
+
+成功创建应用后，在对应应用右侧选择 “添加Key” -> 填写Key名称 -> 选择 “Web服务” -> 勾选同意框 -> 点击 “提交” 即可。
+
+![添加 Key](https://static.project-pigeon.com/docs/configuration/06.png)
+
+#### 4. 在咕咕地球内使用
+
+创建 Key 后，复制 Key 的值，前往咕咕地球内的 “供应商” 界面，选择“高德”，将 Key 粘贴到对应输入框内，点击“保存”即可完成配置。
+
+![复制 Key](https://static.project-pigeon.com/docs/configuration/07.png)
+
+![在咕咕地球内配置高德供应商](https://static.project-pigeon.com/docs/configuration/08.png)
