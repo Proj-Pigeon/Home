@@ -57,8 +57,52 @@ icon: Settings
 
 #### 4. 在咕咕地球内使用
 
-创建 Key 后，复制 Key 的值，前往咕咕地球内的 “供应商” 界面，选择“高德”，将 Key 粘贴到对应输入框内，点击“保存”即可完成配置。
+创建 Key 后，复制 Key 的值，前往咕咕地球内的 “供应商” 界面，选择 “高德”，将 Key 粘贴到对应输入框内，点击 “保存” 即可完成配置。
 
 ![复制 Key](https://static.project-pigeon.com/docs/configuration/07.png)
 
 ![在咕咕地球内配置高德供应商](https://static.project-pigeon.com/docs/configuration/08.png)
+
+### 百度地图开放平台
+
+对于需要更多搜索结果的用户，我们推荐**一同配置百度地图开放平台**，因为百度地图 API 的搜索结果和高德开放平台 API 的搜索结果**可能会有所不同，甚至可能更多**。
+
+<Callout title="AI 使用提醒" type="warn">
+  EOQ 智能助手目前仅支持调用 **高德开放平台** 的 API 来查询地点和地理信息，因此**如果您只配置了百度地图开放平台的 API 信息，AI 仍无法使用对应工具获取结果**。
+</Callout>
+
+#### 1. 注册并登录开发者账号
+
+<Callout title="支持百度账号一键登录" type="info">
+  如果您的设备上有网页浏览器或相关软件（如百度网盘）已登录百度通行证账号，则**在登录页一键授权即可登录**。
+
+  若在注册页面填写手机号时提示 “手机号已被注册，请直接登录或更换手机号注册”，则**请直接点击页面右上角 “登录” 按钮使用手机号登录**。
+</Callout>
+
+打开百度地图开放平台，进入 [注册页](https://lbs.baidu.com/apiconsole/becomedev/register) ，通过 +86 手机号注册百度地图开放平台账号。
+
+![使用手机号注册百度开放平台账号](https://static.project-pigeon.com/docs/configuration/baidu-01.png)
+
+注册完成后需要选择认证主体类型，选择“个人”或“企业”，并完成实名认证。
+
+#### 2. 创建应用
+
+前往 [控制台 - 应用管理 - 我的应用](https://lbs.baidu.com/apiconsole/key) -> 点击 “创建应用” ->  填写应用名称和应用类型（服务端） -> 请求校验方式建议设置为 “sn校验方式” -> 点击 “提交”。
+
+<Callout title="不建议使用 IP 白名单" type="warn">
+  绝大部分的家用带宽和移动网络的公网 IP 地址都是动态分配的，**若您使用了 IP 白名单方式，很有可能会导致 API 调用失败**。
+</Callout>
+
+![新建应用1](https://static.project-pigeon.com/docs/configuration/baidu-02.png)
+
+![新建应用2](https://static.project-pigeon.com/docs/configuration/baidu-03.png)
+
+#### 3. 在咕咕地球内使用
+
+创建应用成功后，返回应用列表，找到刚刚创建的应用，复制 “访问应用（AK）” 的值和 “修改” 弹窗内的 “SK” 的值，在咕咕地球中粘贴保存即可完成配置。如果您使用 IP 白名单验证方式，则无需配置 SK 值。
+
+![复制AK](https://static.project-pigeon.com/docs/configuration/baidu-04.png)
+
+![复制SK](https://static.project-pigeon.com/docs/configuration/baidu-05.png)
+
+![在咕咕地球内配置百度供应商](https://static.project-pigeon.com/docs/configuration/baidu-06.png)
